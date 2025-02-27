@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediterraneo a Bocados</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./imagenes/icono.svg">
+    <link rel="stylesheet" href="./styles/style-index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="enhanced-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                    <img src="./imagenes/icono.svg" alt="Logo"> 
+                    <span>El Mediterraneo a Bocados</span>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/nuestroprop.html">Nuestro Propósito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/porque.html">¿Por qué?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/haztesocio.html">Hazte Socio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/ayudanos.html">Ayúdanos</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="d-flex align-items-center">
+                        <div class="header-social-icons d-none d-lg-flex me-3">
+                            <a href="https://www.youtube.com/user/comunitatvalenciana" class="social-icon-link">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="https://x.com/c_valenciana?lang=en" class="social-icon-link">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="https://www.instagram.com/comunitat_valenciana/?hl=en" class="social-icon-link">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                        
+                        <a href="./paginas/haztesocio.html" class="btn btn-account">
+                            <i class="bi bi-person-circle"></i> Cuenta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Video header -->
+    <div class="video-header mb-4">
+        <video autoplay loop muted>
+            <source src="./videos/arroz-a-banda.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- Navigation boxes -->
+    <div class="container mb-5">
+        <div class="navigation-grid">
+            <!-- Top left box -->
+            <div class="feature-box propo grid-item-tl">
+                <a href="./paginas/nuestroprop.html">Nuestro Propósito</a>
+            </div>
+            
+            <!-- Top right box -->
+            <div class="feature-box porque grid-item-tr">
+                <a href="./paginas/porque.html">¿Por qué?</a>
+            </div>
+            
+            <!-- Center - jamón image -->
+            <div class="center-box grid-item-center">
+                <img src="./imagenes/jamon.png" alt="Jamón" class="img-fluid">
+            </div>
+            
+            <!-- Bottom left box -->
+            <div class="feature-box socio grid-item-bl">
+                <a href="./paginas/haztesocio.html">Hazte Socio</a>
+            </div>
+            
+            <!-- Bottom right box -->
+            <div class="feature-box ayuda grid-item-br">
+                <a href="./paginas/ayudanos.html">Ayúdanos</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Stats section -->
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <div class="col-lg-4 text-center text-lg-start">
+                    <div class="stats-number">243.243</div>
+                    <p class="stats-desc">Firmas Conseguidas</p>
+                </div>
+                <div class="col-lg-8">
+                    <img src="./imagenes/solidaridad-imagen.jpg" alt="Solidaridad" class="img-fluid stats-image">
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-4 order-lg-2 text-center text-lg-end">
+                    <div class="stats-number">243.243</div>
+                    <p class="stats-desc">Son Socios</p>
+                </div>
+                <div class="col-lg-8 order-lg-1">
+                    <img src="./imagenes/handshake.jpg" alt="Handshake" class="img-fluid stats-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Campaigns section -->
+    <section class="container py-5">
+    <h2 class="text-center mb-4">Campañas</h2>
+    
+    <!-- Modified Carousel - One campaign at a time -->
+    <div id="campaignCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- First campaign -->
+            <div class="carousel-item active">
+                <div class="campaign-card card mx-auto" style="max-width: 650px;">
+                    <img src="./imagenes/tapas-campana.jpg" class="card-img-top" alt="Campaign 1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Reducir los precios de los alimentos diarios</h5>
+                        <p class="card-text flex-grow-1">Esta campaña existe para reducir los precios globales de los alimentos para no tener que preocuparse por precios excesivos</p>
+                        <a href="./paginas/haztesocio.html" class="btn btn-warning">Firma</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Second campaign -->
+            <div class="carousel-item">
+                <div class="campaign-card card mx-auto" style="max-width: 650px;">
+                    <img src="./imagenes/aceite-campana.jpeg" class="card-img-top" alt="Campaign 2">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">No puedo comprar aceite de oliva</h5>
+                        <p class="card-text flex-grow-1">Esta campaña es para reducir el precio del aceite de oliva para conservar nuestras costumbres y cultura</p>
+                        <a href="./paginas/haztesocio.html" class="btn btn-warning">Firma</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Third campaign -->
+            <div class="carousel-item">
+                <div class="campaign-card card mx-auto" style="max-width: 650px;">
+                    <img src="./imagenes/arroz-campana.jpg" class="card-img-top" alt="Campaign 3">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Inflación de arroz</h5>
+                        <p class="card-text flex-grow-1">Todos los domingos hago arroz a banda con mi familia, pero el precio del arroz ha aumentado tanto que ya no puedo, ¿qué pensamos?</p>
+                        <a href="./paginas/haztesocio.html" class="btn btn-warning">Firma</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fourth campaign -->
+            <div class="carousel-item">
+                <div class="campaign-card card mx-auto" style="max-width: 650px;">
+                    <img src="./imagenes/aceituna-campana.jpg" class="card-img-top" alt="Campaign 4">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Las olivas escasan, necesitamos agua</h5>
+                        <p class="card-text flex-grow-1">Los cultivos de olivas van a declive por escasez de agua y aumentan los precios por este problema</p>
+                        <a href="./paginas/haztesocio.html" class="btn btn-warning">Firma</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fifth campaign -->
+            <div class="carousel-item">
+                <div class="campaign-card card mx-auto" style="max-width: 650px;">
+                    <img src="./imagenes/jamon-campana.jpg" class="card-img-top" alt="Campaign 5">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Jamón para todos</h5>
+                        <p class="card-text flex-grow-1">El jamón es parte de nuestra cultura, pero alguien de clase media como yo no puede comprárselo</p>
+                        <a href="./paginas/haztesocio.html" class="btn btn-warning">Firma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#campaignCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#campaignCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        
+        <!-- Updated indicators for 5 slides -->
+        <div class="carousel-indicators position-static mt-3">
+            <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+    </div>
+</section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-3">
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/user/comunitatvalenciana">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://x.com/c_valenciana?lang=en">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/comunitat_valenciana/?hl=en">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="./paginas/nuestroprop.html">Nuestro Propósito</a>
+                    <a href="./paginas/porque.html">¿Por qué?</a>
+                    <a href="./paginas/haztesocio.html">Hazte Socio</a>
+                    <a href="./paginas/ayudanos.html">Ayúdanos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

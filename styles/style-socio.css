@@ -1,0 +1,277 @@
+/* Import Dancing Script font */
+@font-face {
+    font-family: "Dancing Script";
+    src: url("./fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+:root {
+    --primary-color: #0275d8;
+    --accent-color: #f0ad4e;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+.enhanced-header {
+    background-color: #f8f5f2;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 0;
+    border-bottom: 3px solid var(--accent-color, #f0ad4e);
+}
+
+.enhanced-header .navbar-brand {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.enhanced-header .navbar-brand span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+
+.enhanced-header .navbar-brand img {
+    height: 40px;
+    margin-right: 12px;
+}
+
+.enhanced-header .nav-link {
+    font-weight: 500;
+    color: #333;
+    padding: 0.75rem 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.enhanced-header .nav-link:hover {
+    color: var(--primary-color, #0275d8);
+}
+
+.enhanced-header .nav-link.active {
+    color: var(--primary-color, #0275d8);
+    font-weight: 600;
+}
+
+.enhanced-header .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 3px;
+    background-color: var(--primary-color, #0275d8);
+}
+
+/* Social Icons */
+.header-social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.social-icon-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    color: var(--primary-color, #0275d8);
+}
+
+.social-icon-link i {
+    font-size: 1.1rem;
+}
+
+/* Account Button */
+.btn-account {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 0.4rem 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.btn-account:hover {
+    background-color: var(--primary-color, #0275d8);
+    color: white;
+    border-color: var(--primary-color, #0275d8);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.btn-account i {
+    margin-right: 5px;
+}
+
+/* Offcanvas menu */
+.offcanvas-header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Form header */
+.display-4.fw-bold.text-primary {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+}
+
+
+/* Form styles */
+.form-container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.benefits-card {
+    background: linear-gradient(135deg, #f0ad4e 0%, #ec971f 100%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.benefits-card h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.benefits-card ul li {
+    margin-bottom: 0.75rem;
+}
+
+.benefits-card .fw-bold {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}
+
+.benefits-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
+    margin-bottom: 1rem;
+}
+
+.form-section h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+}
+
+.form-section .form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(240, 173, 78, 0.25);
+}
+
+.form-section .btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.form-section .btn-primary:hover {
+    background-color: #ec971f;
+    border-color: #ec971f;
+}
+
+/* Testimonials */
+
+.testimonios-header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    height: 100%;
+}
+
+.testimonial-card .card-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.testimonial-card .card-header h5 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+/* Offcanvas menu */
+.offcanvas-header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Breadcrumbs */
+.custom-breadcrumb {
+    padding: 0.75rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .enhanced-header .navbar-collapse {
+        background-color: #fff;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-top: 1rem;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .enhanced-header .nav-link.active::after {
+        display: none;
+    }
+    
+    .enhanced-header .nav-link.active {
+        background-color: rgba(2, 117, 216, 0.1);
+        border-radius: 0.25rem;
+    }
+}

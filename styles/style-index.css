@@ -1,0 +1,429 @@
+@font-face {
+    font-family: "Dancing Script";
+    src: url("./fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+:root {
+    --primary-color: #0275d8;
+    --accent-color: #f0ad4e;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+.enhanced-header {
+    background-color: #f8f5f2;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 0;
+    border-bottom: 3px solid var(--accent-color, #f0ad4e);
+}
+
+.enhanced-header .navbar-brand {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.enhanced-header .navbar-brand span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+
+.enhanced-header .navbar-brand img {
+    height: 40px;
+    margin-right: 12px;
+}
+
+.enhanced-header .nav-link {
+    font-weight: 500;
+    color: #333;
+    padding: 0.75rem 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.enhanced-header .nav-link:hover {
+    color: var(--primary-color, #0275d8);
+}
+
+.enhanced-header .nav-link.active {
+    color: var(--primary-color, #0275d8);
+    font-weight: 600;
+}
+
+.enhanced-header .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 3px;
+    background-color: var(--primary-color, #0275d8);
+}
+
+/* Social Icons */
+.header-social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.social-icon-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    color: var(--primary-color, #0275d8);
+}
+
+.social-icon-link i {
+    font-size: 1.1rem;
+}
+
+/* Account Button */
+.btn-account {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 0.4rem 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.btn-account:hover {
+    background-color: var(--primary-color, #0275d8);
+    color: white;
+    border-color: var(--primary-color, #0275d8);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.btn-account i {
+    margin-right: 5px;
+}
+
+
+/* Offcanvas menu */
+.offcanvas-header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Video header */
+.video-header {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.video-header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section */
+
+section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Navigation boxes */
+.feature-box {
+    transition: transform 0.3s;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 200px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.propo {
+    background-image: url(../imagenes/nuestro-proposito.jpg);
+    background-size: cover; 
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: overlay;
+}
+
+.porque {
+    background-image: url(../imagenes/porque.avif);
+    background-size: cover; 
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: overlay;
+}
+
+.socio {
+    background-image: url(../imagenes/socio.jpeg);
+    background-size: cover; 
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: overlay;
+}
+
+.ayuda {
+    background-image: url(../imagenes/ayuda.jpeg);
+    background-size: cover; 
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: overlay;
+}
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-box img {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.navigation-grid {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 1.5rem;
+height: 425px;
+}
+
+.grid-item-tl {
+grid-column: 1;
+grid-row: 1;
+}
+
+.grid-item-tr {
+grid-column: 3;
+grid-row: 1;
+}
+
+.grid-item-center {
+grid-column: 2;
+grid-row: 1 / span 2;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.grid-item-bl {
+grid-column: 1;
+grid-row: 2;
+}
+
+.grid-item-br {
+grid-column: 3;
+grid-row: 2;
+}
+
+/* Campaign cards */
+#campaignCarousel {
+margin-bottom: 40px;
+}
+
+#campaignCarousel .campaign-card {
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+#campaignCarousel .campaign-card:hover {
+    transform: translateY(-5px);
+}
+
+#campaignCarousel .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+#campaignCarousel .card-body {
+    padding: 1.5rem;
+}
+
+#campaignCarousel .card-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+#campaignCarousel .card-text {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+#campaignCarousel .btn-warning {
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+#campaignCarousel .btn-warning:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Carousel controls */
+#campaignCarousel .carousel-control-prev,
+#campaignCarousel .carousel-control-next {
+    width: 5%;
+    opacity: 0.7;
+}
+
+#campaignCarousel .carousel-control-prev-icon,
+#campaignCarousel .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+/* Indicators styling */
+#campaignCarousel .carousel-indicators {
+    margin-top: 20px;
+}
+
+#campaignCarousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+#campaignCarousel .carousel-indicators button.active {
+    background-color: var(--accent-color);
+}
+
+/* Animation for slide transition */
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Stats section */
+.stats-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.stats-number {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5.5rem;
+    color: var(--primary-color);
+}
+
+.stats-desc{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.stats-image {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navigation-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        height: auto;
+    }
+    
+    .grid-item-tl, .grid-item-tr, .grid-item-center, .grid-item-bl, .grid-item-br {
+        grid-column: 1;
+    }
+    
+    .grid-item-tl { grid-row: 1; }
+    .grid-item-tr { grid-row: 2; }
+    .grid-item-center { grid-row: 3; }
+    .grid-item-bl { grid-row: 4; }
+    .grid-item-br { grid-row: 5; }
+}
+
+@media (max-width: 991.98px) {
+    .enhanced-header .navbar-collapse {
+        background-color: #fff;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-top: 1rem;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .enhanced-header .nav-link.active::after {
+        display: none;
+    }
+    
+    .enhanced-header .nav-link.active {
+        background-color: rgba(2, 117, 216, 0.1);
+        border-radius: 0.25rem;
+    }
+}
