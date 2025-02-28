@@ -152,7 +152,7 @@ body {
     object-fit: cover;
 }
 
-/* Hero section with overlay text */
+/* Overlay Carousel */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -172,6 +172,47 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 3.8rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Stats */
+.stats-item {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.stats-number {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Sections */
+.about-section {
+    padding: 2rem 0 4rem;
+}
+
+.about-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.5rem;
 }
 
 /* Content blocks styling */
@@ -209,7 +250,7 @@ body {
     margin: 2rem 0;
 }
 
-/* Call to action section */
+/* Saber más */
 .cta-section {
     background-color: var(--accent-color);
     padding: 3rem 0;
@@ -223,7 +264,7 @@ body {
     font-size: 2.8rem;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
     background-color: #343a40;
     color: white;
@@ -245,48 +286,7 @@ footer .social-icons a img{
     width: 1.7rem;
 }
 
-/* Custom styling for sections */
-.about-section {
-    padding: 2rem 0 4rem;
-}
-
-.about-section h2 {
-    color: var(--primary-color);
-    margin-bottom: 2rem;
-    text-align: center;
-    font-weight: 700;
-    font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
-
-}
-
-.feature-icon {
-    width: 64px;
-    height: 64px;
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    color: white;
-    font-size: 1.5rem;
-}
-
-/* Stats section */
-.stats-item {
-    text-align: center;
-    margin: 1.5rem 0;
-}
-
-.stats-number {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--primary-color);
-}
-
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
     .video-container {
         height: 40vh;

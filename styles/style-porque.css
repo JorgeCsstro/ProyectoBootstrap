@@ -152,7 +152,7 @@ body {
     object-fit: cover;
 }
 
-/* Hero section with overlay text */
+/* Overlay Header */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -172,6 +172,19 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 3.8rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Sections */
+.about-section {
+    padding: 4rem 0;
+}
+
+.about-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
 }
 
 /* Content blocks styling */
@@ -224,20 +237,7 @@ footer .social-icons a img{
     width: 1.7rem;
 }
 
-/* Custom styling for sections */
-.about-section {
-    padding: 4rem 0;
-}
-
-.about-section h2 {
-    color: var(--primary-color);
-    margin-bottom: 2rem;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
-}
-
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
     .video-container {
         height: 40vh;

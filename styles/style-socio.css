@@ -1,4 +1,4 @@
-/* Import Dancing Script font */
+
 @font-face {
     font-family: "Dancing Script";
     src: url("./fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
@@ -202,7 +202,6 @@ body {
 }
 
 /* Reseñas */
-
 .resenas-header {
     font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
@@ -258,6 +257,8 @@ footer .social-icons a {
 footer .social-icons a img{
     width: 1.7rem;
 }
+
+/* Responsive */
 
 @media (max-width: 991.98px) {
     .enhanced-header .navbar-collapse {

@@ -154,7 +154,7 @@ body {
     object-fit: cover;
 }
 
-/* Hero section with overlay text */
+/* Overlay Carousel */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -182,7 +182,7 @@ body {
     padding: 1rem 0;
 }
 
-/* Section styling */
+/* Section */
 .campaigns-section {
     padding: 3rem 0;
 }
@@ -256,8 +256,7 @@ body {
     color: var(--primary-color);
 }
 
-
-/* Footer styling */
+/* Footer */
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -284,7 +283,7 @@ footer .social-icons a img{
     width: 1.7rem;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
     .campaign-card {
         margin-bottom: 1.5rem;
