@@ -250,7 +250,7 @@ section h2 {
 }
 
 .propo {
-    background-image: url(../imagenes/nuestro-proposito.jpg);
+    background-image: url(../imagenes/nuestro-proposito.webp);
     background-size: cover; 
     background-position: center center;
     background-color: rgba(0, 0, 0, 0.1);
@@ -258,7 +258,7 @@ section h2 {
 }
 
 .porque {
-    background-image: url(../imagenes/porque.avif);
+    background-image: url(../imagenes/porque.webp);
     background-size: cover; 
     background-position: center center;
     background-color: rgba(0, 0, 0, 0.1);
@@ -266,7 +266,7 @@ section h2 {
 }
 
 .socio {
-    background-image: url(../imagenes/socio.jpeg);
+    background-image: url(../imagenes/socio.webp);
     background-size: cover; 
     background-position: center center;
     background-color: rgba(0, 0, 0, 0.1);
@@ -274,7 +274,7 @@ section h2 {
 }
 
 .ayuda {
-    background-image: url(../imagenes/ayuda.jpeg);
+    background-image: url(../imagenes/ayuda.webp);
     background-size: cover; 
     background-position: center center;
     background-color: rgba(0, 0, 0, 0.1);
