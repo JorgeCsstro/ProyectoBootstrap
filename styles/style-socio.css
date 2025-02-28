@@ -129,6 +129,14 @@ body {
     color: white;
 }
 
+/* Breadcrumbs */
+.custom-breadcrumb {
+    padding: 0.75rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
 /* Form header */
 .display-4.fw-bold.text-primary {
     font-family: 'Dancing Script', cursive;
@@ -193,35 +201,35 @@ body {
     border-color: #ec971f;
 }
 
-/* Testimonials */
+/* Reseñas */
 
-.testimonios-header {
+.resenas-header {
     font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
-.testimonial-card {
+.resenas-card {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-bottom: 1.5rem;
     height: 100%;
 }
 
-.testimonial-card .card-header {
+.resenas-card .card-header {
     background-color: var(--primary-color);
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.testimonial-card .card-header h5 {
+.resenas-card .card-header h5 {
     font-family: 'Dancing Script', cursive;
     font-size: 1.4rem;
     margin-bottom: 0;
 }
 
-.testimonial-avatar {
+.resenas-avatar {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -243,22 +251,12 @@ footer a {
 }
 
 footer .social-icons a {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 0 10px;
 }
 
-/* Offcanvas menu */
-.offcanvas-header {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-/* Breadcrumbs */
-.custom-breadcrumb {
-    padding: 0.75rem 1rem;
-    background-color: #f8f9fa;
-    border-radius: 0.25rem;
-    margin-bottom: 1.5rem;
+footer .social-icons a img{
+    width: 1.7rem;
 }
 
 @media (max-width: 991.98px) {

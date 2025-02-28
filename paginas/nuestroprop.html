@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gastronomia Mediterraneo">
     <title>Mediterraneo a Bocados - Nuestro Propósito</title>
     <link rel="icon" type="image/x-icon" href="../imagenes/icono.svg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="icon" type="image/x-icon" href="./imagenes/icono.svg">
     <link rel="stylesheet" href="../styles/style-proposito.css">
 </head>
 <body>
-    <!-- Header/Navbar -->
+    <!-- Navbar -->
     <header class="enhanced-header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -64,12 +64,10 @@
         </nav>
     </header>
 
-    <!-- Video Banner with Overlay -->
-    <div class="video-container">
-        <video autoplay loop muted id="front-video">
-            <source src="../videos/arroz-a-banda.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <!-- IMG Banner -->
+
+    <div class="hero-image-container">
+        <img src="../imagenes/nuestro-proposito.jpg" alt="¿Por Qué?" id="hero-image">
         <div class="hero-overlay">
             <div>
                 <h1 class="display-4 fw-bold">Nuestro Proposito</h1>
@@ -119,7 +117,6 @@
                 </div>
             </div>
             
-            <!-- Content Block 1 -->
             <div class="row content-block align-items-center">
                 <div class="col-md-6">
                     <h3>Preservar nuestra herencia culinaria</h3>
@@ -131,7 +128,6 @@
                 </div>
             </div>
             
-            <!-- Content Block 2 -->
             <div class="row content-block align-items-center flex-md-row-reverse">
                 <div class="col-md-6">
                     <h3>Gastronomía de calidad accesible para todos</h3>
@@ -143,7 +139,6 @@
                 </div>
             </div>
             
-            <!-- Content Block 3 -->
             <div class="row content-block align-items-center">
                 <div class="col-md-6">
                     <h3>Apoyando a agricultores y ganaderos locales</h3>
@@ -157,7 +152,7 @@
         </div>
     </section>
 
-    <!-- Call to Action Section -->
+    <!-- Links de socio y ayuda -->
     <section class="cta-section">
         <div class="container">
             <h2 class="mb-4">Únete a nuestra misión</h2>
@@ -173,13 +168,13 @@
             <div class="row">
                 <div class="col-md-12 text-center mb-3">
                     <div class="social-icons">
-                        <a href="https://www.youtube.com/user/comunitatvalenciana">
+                        <a href="https://www.youtube.com/user/comunitatvalenciana" aria-label="Canal de Youtube">
                             <i class="bi bi-youtube"></i>
                         </a>
-                        <a href="https://x.com/c_valenciana?lang=en">
-                            <i class="bi bi-twitter-x"></i>
+                        <a href="https://x.com/c_valenciana?lang=en" aria-label="Cuenta de Twitter">
+                            <img src="../imagenes/xicon.png" alt="Icono de Twitter">
                         </a>
-                        <a href="https://www.instagram.com/comunitat_valenciana/?hl=en">
+                        <a href="https://www.instagram.com/comunitat_valenciana/?hl=en" aria-label="Cuenta de Instagram">
                             <i class="bi bi-instagram"></i>
                         </a>
                     </div>
@@ -196,7 +191,7 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS bundle (includes Popper) -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

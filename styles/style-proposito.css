@@ -132,15 +132,21 @@ body {
     color: white;
 }
 
-/* Video banner */
-.video-container {
+/* Breadcrumbs */
+.breadcrumb {
+    background-color: transparent;
+    padding: 1rem 0;
+}
+
+/* IMG Banner */
+.hero-image-container {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     overflow: hidden;
 }
 
-#front-video {
+#hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -231,14 +237,12 @@ footer a {
 }
 
 footer .social-icons a {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 0 10px;
 }
 
-/* Breadcrumbs */
-.breadcrumb {
-    background-color: transparent;
-    padding: 1rem 0;
+footer .social-icons a img{
+    width: 1.7rem;
 }
 
 /* Custom styling for sections */

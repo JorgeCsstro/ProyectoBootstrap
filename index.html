@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gastronomia Mediterraneo">
     <title>Mediterraneo a Bocados</title>
+    <link rel="icon" type="image/x-icon" href="./imagenes/icono.svg">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="icon" type="image/x-icon" href="./imagenes/icono.svg">
     <link rel="stylesheet" href="./styles/style-index.css">
 </head>
 <body>
@@ -64,14 +65,54 @@
     </header>
     
     <!-- Video header -->
-    <div class="video-header mb-4">
-        <video autoplay loop muted>
-            <source src="./videos/arroz-a-banda.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="carousel-header mb-4">
+        <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
+            <div class="carousel-inner">
+                <!-- Slide 1: Nuestro Propósito -->
+                <a href="./paginas/nuestroprop.html" class="carousel-item active" aria-label="Nuestro Proposito">
+                    <div class="carousel-img-container">
+                        <img src="./imagenes/nuestro-proposito.jpg" class="d-block w-100" alt="Nuestro Propósito">
+                        <div class="carousel-caption">
+                            <h2>Nuestro Propósito</h2>
+                            <p>Preservar la cultura culinaria mediterránea haciendo accesibles sus ingredientes esenciales</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Slide 2: ¿Por qué? -->
+                <a href="./paginas/porque.html" class="carousel-item" aria-label="¿Por qué?">
+                    <div class="carousel-img-container">
+                        <img src="./imagenes/porque.avif" class="d-block w-100" alt="¿Por qué?">
+                        <div class="carousel-caption">
+                            <h2>¿Por qué?</h2>
+                            <p>Porque los alimentos básicos mediterráneos son patrimonio cultural y derecho de todos</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Slide 3: Hazte Socio -->
+                <a href="./paginas/haztesocio.html" class="carousel-item" aria-label="¿Por qué?">
+                    <div class="carousel-img-container">
+                        <img src="./imagenes/socio.jpeg" class="d-block w-100" alt="Hazte Socio">
+                        <div class="carousel-caption">
+                            <h2>Hazte Socio</h2>
+                            <p>Únete a nuestra comunidad y ayuda a defender el acceso a la dieta mediterránea</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Slide 4: Ayúdanos -->
+                <a href="./paginas/ayudanos.html" class="carousel-item" aria-label="¿Por qué?">
+                    <div class="carousel-img-container">
+                        <img src="./imagenes/ayuda.jpeg" class="d-block w-100" alt="Ayúdanos">
+                        <div class="carousel-caption">
+                            <h2>Ayúdanos</h2>
+                            <p>Colabora con nuestras campañas para mantener vivas nuestras tradiciones alimentarias</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
     
-    <!-- Navigation boxes -->
+    <!-- Cajas Paginas -->
     <div class="container mb-5">
         <div class="navigation-grid">
             <!-- Top left box -->
@@ -126,14 +167,12 @@
         </div>
     </section>
     
-    <!-- Campaigns section -->
+    <!-- Campañas -->
     <section class="container py-5">
     <h2 class="text-center mb-4">Campañas</h2>
-    
-    <!-- Modified Carousel - One campaign at a time -->
     <div id="campaignCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <!-- First campaign -->
+            <!-- 1ª campaña -->
             <div class="carousel-item active">
                 <div class="campaign-card card mx-auto" style="max-width: 650px;">
                     <img src="./imagenes/tapas-campana.jpg" class="card-img-top" alt="Campaign 1">
@@ -145,7 +184,7 @@
                 </div>
             </div>
             
-            <!-- Second campaign -->
+            <!-- 2ª campaña -->
             <div class="carousel-item">
                 <div class="campaign-card card mx-auto" style="max-width: 650px;">
                     <img src="./imagenes/aceite-campana.jpeg" class="card-img-top" alt="Campaign 2">
@@ -157,7 +196,7 @@
                 </div>
             </div>
             
-            <!-- Third campaign -->
+            <!-- 3ª campaña -->
             <div class="carousel-item">
                 <div class="campaign-card card mx-auto" style="max-width: 650px;">
                     <img src="./imagenes/arroz-campana.jpg" class="card-img-top" alt="Campaign 3">
@@ -169,7 +208,7 @@
                 </div>
             </div>
             
-            <!-- Fourth campaign -->
+            <!-- 4ª campaña -->
             <div class="carousel-item">
                 <div class="campaign-card card mx-auto" style="max-width: 650px;">
                     <img src="./imagenes/aceituna-campana.jpg" class="card-img-top" alt="Campaign 4">
@@ -181,7 +220,7 @@
                 </div>
             </div>
             
-            <!-- Fifth campaign -->
+            <!-- 5ª campaña -->
             <div class="carousel-item">
                 <div class="campaign-card card mx-auto" style="max-width: 650px;">
                     <img src="./imagenes/jamon-campana.jpg" class="card-img-top" alt="Campaign 5">
@@ -203,8 +242,6 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-        
-        <!-- Updated indicators for 5 slides -->
         <div class="carousel-indicators position-static mt-3">
             <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -221,13 +258,13 @@
             <div class="row">
                 <div class="col-md-12 text-center mb-3">
                     <div class="social-icons">
-                        <a href="https://www.youtube.com/user/comunitatvalenciana">
+                        <a href="https://www.youtube.com/user/comunitatvalenciana" aria-label="Canal de Youtube">
                             <i class="bi bi-youtube"></i>
                         </a>
-                        <a href="https://x.com/c_valenciana?lang=en">
-                            <i class="bi bi-twitter-x"></i>
+                        <a href="https://x.com/c_valenciana?lang=en" aria-label="Cuenta de Twitter">
+                            <img src="../imagenes/xicon.png" alt="Icono de Twitter">
                         </a>
-                        <a href="https://www.instagram.com/comunitat_valenciana/?hl=en">
+                        <a href="https://www.instagram.com/comunitat_valenciana/?hl=en" aria-label="Cuenta de Instagram">
                             <i class="bi bi-instagram"></i>
                         </a>
                     </div>
